@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WebViewIssues.Browser" Title="WebView">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ActivityIndicator x:Name="indicator" Grid.Row="0" IsVisible="False"/>
+            <WebView x:Name="webView" Grid.Row="1" Navigating="webView_Navigating" Navigated="webView_Navigated"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
